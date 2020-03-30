@@ -6,6 +6,8 @@ It's a simple python3 script giving a random set of 10 trivia for a given catego
 
 You simply need to execute the python3 script from a terminal.
 
+`shell python3 random_question.py`
+
 # Requirements
 
 You need the `consolemenu` and the `json` packages.
