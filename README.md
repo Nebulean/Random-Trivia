@@ -1,4 +1,4 @@
-# Random trivia
+# Random trivia from the Open Trivia Database
 
 It's a simple python3 script giving a random set of 10 trivia for a given category. All the trivia are taken from the [Open Trivia Database](https://opentdb.com/), an awesome project!
 
