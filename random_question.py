@@ -7,7 +7,6 @@ import urllib.request as url # to download
 import html
 import random
 from time import sleep
-from playsound import playsound
 
 # We first get all the categories
 link = "https://opentdb.com/api_category.php"
