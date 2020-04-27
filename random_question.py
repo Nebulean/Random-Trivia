@@ -7,6 +7,7 @@ import urllib.request as url # to download
 import html
 import random
 from time import sleep
+from playsound import playsound
 
 # We first get all the categories
 link = "https://opentdb.com/api_category.php"
@@ -64,7 +65,7 @@ with url.urlopen(link) as f:
     data = json.loads(f.read().decode())
 
 for q in data['results']:
-    print("Now is the time for a question!")
+    # print("Now is the time for a question!")
     answers = ['Direct answer [3pts if correct]', 'Multiple Choice [1pts if correct]']
     menu = cm.SelectionMenu(answers, html.unescape(q['question']))
     menu.show()
@@ -85,6 +86,7 @@ for q in data['results']:
         # Choose where to put the right question, and we insert it.
         number = random.randint(0, len(possibilities))
         possibilities.insert(number, html.unescape(q['correct_answer']))
+
         # print(possibilities)
         menu = cm.SelectionMenu(possibilities, html.unescape(q['question']))
         menu.show()
